@@ -13,6 +13,10 @@ import NotFound from "./landing_page/NotFound";
 import Navbar from "./landing_page/Navbar";
 import Footer from "./landing_page/Footer";
 
+fetch("https://zerodha-02.onrender.com")
+  .then(res => res.json())
+  .then(data => console.log(data));
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
