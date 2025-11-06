@@ -19,6 +19,9 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+app.use(cors({ origin: "https://zerodha-frontend.onrender.com" }));
+
+
 // app.get("/addHoldings", async (req, res) => {
 // let tempHoldings = [
 //   {
