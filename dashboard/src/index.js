@@ -4,10 +4,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import Home from "./components/Home";
 
-fetch("https://zerodha-02.onrender.com")
-  .then(res => res.json())
-  .then(data => console.log(data));
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
