@@ -16,8 +16,10 @@ const uri = process.env.MONGO_URL;
 
 const app = express();
 
-app.use(cors());
-app.use(bodyParser.json());
+import cors from "cors";
+app.use(cors({
+  origin: "https://zerodha-02-dashboard.onrender.com", 
+}));
 
 
 
